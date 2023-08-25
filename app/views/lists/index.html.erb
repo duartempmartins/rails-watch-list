@@ -1,9 +1,18 @@
-<h1>HELLO FROM LISTS</h1>
+<div class="container">
+  <div class="d-flex justify-content-center p-5">
+    <h1>LISTS</h1>
+  </div>
 
-<% @lists.each do |list| %>
-  <p> <%= link_to list.name, list_path(list) %> </p>
-<% end %>
+  <% @lists.each do |list| %>
+    <p> <%= link_to list.name, list_path(list) %> </p>
+  <% end %>
 
-<p>
-  <%= link_to "Create new list", new_list_path %>
-</p>
+  <p>
+    <%= link_to "Create new list", new_list_path %>
+  </p>
+
+
+
+
+
+</div>
